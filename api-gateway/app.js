@@ -48,7 +48,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 // database connection
-mongoose.connect('mongodb+srv://drewohanson12:<Ezra0831!>@buwebdev-cluster-1-o4yt9.mongodb.net/test?retryWrites=true', {
+mongoose.connect('mongodb+srv://drewohanson12:Ezra0831!@buwebdev-cluster-1-o4yt9.mongodb.net/test?retryWrites=true', {
   promiseLibrary: require('bluebird')
   }).then ( () => console.log('connection successful'))
   .catch( (err) => console.error(err));
