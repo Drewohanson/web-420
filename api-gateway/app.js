@@ -17,7 +17,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
 var indexRouter = require('./routes/index');
-var apiCatalog = require(‘./routes/api-catalog’); 
+var apiCatalog = require('./routes/api-catalog');
 
 var app = express();
 
@@ -25,7 +25,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-App.use(‘/api’, apiCatalog); 
+app.use('/api', apiCatalog); 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
