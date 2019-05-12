@@ -1,10 +1,11 @@
 /*
 ============================================
 ; Title:  index.js
-; Author: Drew Hanson
-; Date:  5 May 2019
+; Title:  api-Gateway
+; Author: Professor Krasso
 ; Description: Routes the homepage 
-;===========================================
+; Modified By: Drew Hanson+
+; Description: Configuring RESTful security service
 */
 
 var express = require('express');

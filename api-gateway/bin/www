@@ -1,14 +1,4 @@
-/*
-============================================
-; Title:  www
-; Author: Professor Krasso
-; Date:  5 May 2019
-; Modified By: Drew Hanson
-; Description: Starts the server
-;===========================================
-*/
-
-// #!/usr/bin/env node
+#!/usr/bin/env node
 
 /**
  * Module dependencies.
@@ -17,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('api-gateway:server');
 var http = require('http');
-var config = require('../config');
 
 /**
  * Get port from environment and store in Express.
