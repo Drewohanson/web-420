@@ -23,7 +23,7 @@ var index = require('./routes/index');
 var apiCatalog = require('./routes/api-catalog');
 
 var app = express();
-  
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/api', apiCatalog);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -58,5 +59,6 @@ mongoose.connect('mongodb+srv://drewohanson12:Ezra0831!@buwebdev-cluster-1-o4yt9
   promiseLibrary: require('bluebird')
   }).then ( () => console.log('connection successful'))
   .catch( (err) => console.error(err));
+  mongoose.connect('mongodb://user:password@sample.com:port/dbname', { useNewUrlParser: true })
 
 module.exports = app;
